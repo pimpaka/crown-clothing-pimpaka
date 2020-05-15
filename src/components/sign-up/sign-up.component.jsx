@@ -16,7 +16,7 @@ class SignUp extends React.Component {
   }
 
   handleSubmit = async (event) => {
-    console.log(event.preventDefault());
+    event.preventDefault();
     const { displayName, email, password, confirmPassword } = this.state;
     if (password !== confirmPassword) {
       alert("Password don't match");
